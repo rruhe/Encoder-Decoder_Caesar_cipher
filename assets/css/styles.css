@@ -2,10 +2,35 @@
    Global settings
 ################################ */
 
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
 body {
    font-family: 'Courier New', Courier, monospace;
    font-weight: bolder;
-   font-size: 24px;
+   font-size: 22px;
+}
+
+h1 {
+   font-size: 2.2rem;
+   line-height: 2;
+   margin-left: 1vw;
+}
+
+article {
+   background-color: darkgray;
+   margin: 0 2vw;
+}
+
+h1 + article > p {
+   padding: 1vh 1vw;
+}
+
+article + article {
+   padding: 1vh 2vw;
 }
 
 div {
@@ -20,12 +45,12 @@ div + label {
 
 input[type="text"] {
    font-size: 24px;
-   margin: 2vh 0 5vh;
+   margin: 1vh 0 3vh;
 }
 
 input[type="number"] {
    font-size: 24px;
-   margin: 2vh 0 5vh;
+   margin: 1vh 0 3vh;
    display: block;
 }
 
@@ -33,9 +58,10 @@ article > label {
    display: block;
 }
 
-p {
+button + p {
    background-color: coral;
    padding: 1vh 3vw;
+   margin-bottom: 1vh;
 }
 
 button {
@@ -44,5 +70,15 @@ button {
    color: red;
    height: 50px;
    font-weight: bold;
+   margin: 1vh 2vw;
 }
+
+#outpTxt + p {
+   background-color: darkkhaki;
+}
+
+#encryption-array-output + p {
+   background-color: darkkhaki;
+}
+   
 

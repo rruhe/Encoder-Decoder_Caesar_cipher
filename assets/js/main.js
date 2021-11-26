@@ -6,6 +6,9 @@ function startEnDeCryption() {
     let inpTxt = document.getElementById("inputTxt").value;
     let choice1Obj = document.getElementById("encrypt");
     let outpTxtObj = document.getElementById("outpTxt");
+    let encrypArrOutp = document.getElementById("encryption-array-output");
+    let orgArrOutp = document.getElementById("org-array-output");
+    
     outpTxtObj.innerHTML = "";
 
     //Build an Encryption-Array related to the length of the encrption-key and the origin Array. (Example: keyVal = "3" encrptArr[0] = "d", [1] = "e"... [23] = "z" [24] = "a"...
@@ -29,4 +32,6 @@ function startEnDeCryption() {
             outpTxtObj.innerHTML += arrayAlpha[indexOrg];
         }
     }
+    encrypArrOutp.innerHTML = "[" + encryptArr.toString() + "]";
+    orgArrOutp.innerHTML = "[" + arrayAlpha.toString() + "]";
 }
