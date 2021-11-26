@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encoder-Decoder (Caesar cipher)</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <h1>Encoder-Decoder (Caesar cipher)</h1>
+    <article>
+        Make your decision:
+        <div>
+            <div>
+                <input type="radio" id="encrypt" name="encryption" value="1" checked>
+                <label for="encrypt">Encrypt Input-Value</label><br>
+            </div>
+            <div>
+                <input type="radio" id="decrypt" name="encryption" value="2">
+                <label for="decrypt">Decrypt Input-Value</label><br>
+            </div>
+        </div>
+    </article>
+    <article>
+        <label for="keyForCaesar">Key for Encprytion</label>
+        <input type="number" id="keyForCaesar" value=3>
+        <label for="inputTxt">Values for Encprytion or Decryption:</label>
+        <input type="text" name="inputTxt" id="inputTxt" size="70">
+    </article>
+    <button onclick="startEnDeCryption()">start processing</button>
+    <p id="outpTxt">Encrypted Values or Decrypted Values goes here</p>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
