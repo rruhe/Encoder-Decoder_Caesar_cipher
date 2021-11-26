@@ -8,6 +8,7 @@ function startEnDeCryption() {
     let outpTxtObj = document.getElementById("outpTxt");
     outpTxtObj.innerHTML = "";
 
+    //Build an Encryption-Array related to the length of the encrption-key and the origin Array. (Example: keyVal = "3" encrptArr[0] = "d", [1] = "e"... [23] = "z" [24] = "a"...
     for (let i = 0; i < arrayAlpha.length; i++) {
         if ((i + keyVal) < arrayAlpha.length) {
             encryptArr[i] = arrayAlpha[i + keyVal];
@@ -16,6 +17,7 @@ function startEnDeCryption() {
         }
     }
 
+    //Encrypt or Decrypt
     if (choice1Obj.checked) {
         for (const elem of inpTxt) {
             let indexOrg = arrayAlpha.indexOf(elem.toLowerCase(),0);
